@@ -1,0 +1,47 @@
+#colophon{
+ 	background-image: url("../../images/dark-wood.png");
+ 	background-repeat: repeat-x;
+ 	min-height: 55vh;
+    display: flex;
+}
+
+footer p{
+    color: #fff;
+    font-family: $serif;
+    font-size: 0.8rem;
+}
+
+footer h4{
+    font-size: 16px;
+    font-family: $sans-serif;
+    text-transform: uppercase;
+    color: #d99054;
+}
+
+footer h5{
+    font-family: $sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.site-info{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 7vh;
+}
+
+.business-info{
+    padding: 0 5vh;
+}
+
+#footer-logo{
+    margin: 7vh;    
+}
+
+#copyright{
+    align-self: flex-end;
+}
