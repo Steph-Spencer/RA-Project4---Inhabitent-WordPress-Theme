@@ -1,6 +1,6 @@
 <?php
 /**
-* the About Us template file my change
+* the About Us template 
 * Template Name: About-us
 * @package Inhabitent
 */
