@@ -24,7 +24,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div id="background-img">	
 					<div id="navbar">
-						<a href="http://localhost:8888/superkitty"><img id="header-tent" src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
+						<a href="http://localhost:8888/whizkitty"><img id="header-tent" src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
 
 						<nav id="site-navigation" class="main-navigation navi" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>

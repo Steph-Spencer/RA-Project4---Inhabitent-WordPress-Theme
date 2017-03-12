@@ -78,6 +78,15 @@ if ( function_exists('register_sidebar') ) {
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>',
 	) );
+
+if ( function_exists('register_sidebar') ) {
+	register_sidebar(array(
+		'name' => 'Header Image Sidebar',
+		'id' => 'header-image-sidebar',
+		'description' => 'Displays a full-width image at the top of the page',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+	) );
 }
 
 add_action( 'widgets_init', 'red_starter_widgets_init' );
