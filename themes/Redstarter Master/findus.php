@@ -7,6 +7,9 @@
 ?>
 
 <?php get_header(); ?>
+
+<?php while ( have_posts() ) : the_post(); ?>
+
 <div id="find-us">
 		<div class="body-with-sidebar">
 			<h1><?php the_title() ?></h1>
@@ -20,5 +23,7 @@
 	<div class="right-sidebar"><?php dynamic_sidebar('business-info-sidebar') ?>
 	</div>
 </div>
+
+<?php endwhile; ?>
 
 <?php get_footer(); ?>

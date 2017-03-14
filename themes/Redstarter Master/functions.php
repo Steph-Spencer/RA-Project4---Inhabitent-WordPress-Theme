@@ -57,36 +57,43 @@ add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function red_starter_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html( 'Sidebar' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-
-if ( function_exists('register_sidebar') ) {
-	register_sidebar(array(
-		'name' => 'Business Info Sidebar',
-		'id' => 'business-info-sidebar',
-		'description' => 'Displays contact information and hours of operation on pages',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h2 class="widget-title">',
-		'after_title' => '</h2>',
-	) );
-
-if ( function_exists('register_sidebar') ) {
-	register_sidebar(array(
-		'name' => 'Header Image Sidebar',
-		'id' => 'header-image-sidebar',
-		'description' => 'Displays a full-width image at the top of the page',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-	) );
+	$sidebars = array (
+		array(
+			"id" 			=> "sidebar-1" ,
+			"name" 			=>"Sidebar",
+			"description" 	=> "default sidebar",
+			"before_title"	=> "<h2>",
+			"after_title"	=> "</h2>"
+			),
+		array(
+			"id"			=>"business-info-sidebar",
+			"name"			=>"Business Info Sidebar",
+			"description"	=>"adds contact info and business hours to the right pane of the page",
+			"before_title"	=>"<h2 class='widget-title'>",
+			"after_title"	=>"</h2>"
+			),
+		array(
+			"id"			=>"footer-sidebar",
+			"name"			=>"Footer Sidebar",
+			"description"	=>"adds information to the footer at the bottom of the page",
+			"before_title"	=>"<h4 class='business-info'>",
+			"after_title"	=>"</h4>"
+			)
+		);
+	
+	foreach ($sidebars as  $sidebar_name) {
+		
+		register_sidebar( array(
+			'name'          => esc_html( $sidebar_name["name"] ),
+			'id'            => $sidebar_name["id"],
+			'description'   => $sidebar_name["description"],
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => $sidebar_name["before_title"],
+			'after_title'   => $sidebar_name["after_title"],
+		) );
+	}
+	
 }
 
 add_action( 'widgets_init', 'red_starter_widgets_init' );
@@ -127,3 +134,4 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+?>

@@ -801,6 +801,10 @@ h2 .home {
   box-shadow: none;
   border-radius: none; }
 
+.hero-image {
+  background-size: 20%, cover,cover;
+  min-height: 100vh; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
