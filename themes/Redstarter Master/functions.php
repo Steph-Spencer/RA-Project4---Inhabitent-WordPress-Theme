@@ -78,6 +78,13 @@ function red_starter_widgets_init() {
 			"description"	=>"adds information to the footer at the bottom of the page",
 			"before_title"	=>"<h4 class='business-info'>",
 			"after_title"	=>"</h4>"
+			),
+		array(
+			"id"			=>"banner-image-sidebar",
+			"name"			=>"Banner Image",
+			"description"	=>"displays a full-width image",
+			"before_title"	=>"",
+			"after_title"	=>"",
 			)
 		);
 	

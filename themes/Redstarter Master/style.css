@@ -802,8 +802,12 @@ h2 .home {
   border-radius: none; }
 
 .hero-image {
-  background-size: 20%, cover,cover;
-  min-height: 100vh; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 /*--------------------------------------------------------------
 # Media
@@ -871,6 +875,9 @@ object {
 
 .right-sidebar {
   width: 30%; }
+
+footer {
+  margin-top: 7vh; }
 
 #colophon {
   background-image: url("../../images/dark-wood.png");

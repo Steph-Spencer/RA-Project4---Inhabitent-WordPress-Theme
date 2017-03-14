@@ -1,4 +1,5 @@
 <?php
+dynamic_sidebar('banner-image-sidebar');
 get_header();
 ?>
 
