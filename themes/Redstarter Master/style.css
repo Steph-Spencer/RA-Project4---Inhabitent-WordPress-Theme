@@ -628,7 +628,7 @@ a {
 --------------------------------------------------------------*/
 /* Front page */
 #background-img {
-  background: url("../../images/logos/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.4), transparent) no-repeat, url("../../images/home-hero.jpg") no-repeat;
+  background: url("../../images/logos/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.4), transparent) no-repeat;
   background-size: 20%, cover,cover;
   min-height: 100vh; }
 
@@ -877,48 +877,45 @@ object {
   width: 30%; }
 
 footer {
-  margin-top: 7vh; }
-
-#colophon {
-  background-image: url("../../images/dark-wood.png");
-  background-repeat: repeat-x;
-  min-height: 55vh;
-  display: -ms-flexbox;
-  display: flex; }
-
-footer p {
-  color: #fff;
-  font-family: "Merriweather-Light", serif;
-  font-size: 0.8rem; }
-
-footer h4 {
-  font-size: 16px;
-  font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
-  text-transform: uppercase;
-  color: #d99054; }
-
-footer h5 {
-  font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500; }
+  margin-top: 7vh;
+  background: url("../../images/dark-wood.png") repeat-x;
+  min-height: 55vh; }
+  footer p {
+    color: #fff;
+    font-family: "Merriweather-Light", serif;
+    font-size: 0.8rem; }
+  footer h4 {
+    font-size: 16px;
+    font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #d99054; }
+  footer h5 {
+    font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500; }
 
 .site-info {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  width: 50%;
-  margin: 7vh; }
+  width: 40%;
+  margin: 7vh 2em; }
 
-.business-info {
-  padding: 0 5vh; }
+#footer-content-wrapper {
+  display: -ms-flexbox;
+  display: flex; }
 
 #footer-logo {
-  margin: 7vh; }
+  margin-left: auto;
+  margin-top: 7vh;
+  padding: 7vh;
+  width: 25%; }
 
 #copyright {
   -ms-flex-item-align: end;
-      align-self: flex-end; }
+      align-self: flex-end;
+  padding-bottom: 1vh; }

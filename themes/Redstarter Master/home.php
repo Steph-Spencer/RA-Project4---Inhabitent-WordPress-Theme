@@ -1,6 +1,6 @@
 <?php
-dynamic_sidebar('banner-image-sidebar');
 get_header();
+dynamic_sidebar('banner-image-sidebar');
 ?>
 
 <h2 class="home">shop stuff</h2>

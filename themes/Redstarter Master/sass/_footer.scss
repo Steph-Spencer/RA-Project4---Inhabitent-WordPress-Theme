@@ -1,51 +1,48 @@
 footer{
     margin-top: 7vh;
-}
-
-#colophon{
- 	background-image: url("../../images/dark-wood.png");
- 	background-repeat: repeat-x;
- 	min-height: 55vh;
-    display: flex;
-}
-
-footer p{
-    color: #fff;
-    font-family: $serif;
-    font-size: 0.8rem;
-}
-
-footer h4{
-    font-size: 16px;
-    font-family: $sans-serif;
-    text-transform: uppercase;
-    color: #d99054;
-}
-
-footer h5{
-    font-family: $sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
+    background: url("../../images/dark-wood.png") repeat-x;
+    min-height: 55vh;
+    p{
+        color: #fff;
+        font-family: $serif;
+        font-size: 0.8rem;
+    }
+    h4{
+        font-size: 16px;
+        font-family: $sans-serif;
+        text-transform: uppercase;
+        color: #d99054;
+    }
+    h5{
+        font-family: $sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+    }
 }
 
 .site-info{
     display: flex;
     justify-content: space-between;
-    width: 50%;
-    margin: 7vh;
+    width: 40%;
+    margin: 7vh 2em;
 }
 
-.business-info{
-    padding: 0 5vh;
+#footer-content-wrapper{
+    display: flex;
 }
 
 #footer-logo{
-    margin: 7vh;    
+    margin-left: auto;
+    margin-top: 7vh;
+    padding: 7vh;
+    width: 25%;
+
 }
 
 #copyright{
     align-self: flex-end;
+    padding-bottom: 1vh;
 }

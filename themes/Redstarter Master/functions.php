@@ -80,11 +80,18 @@ function red_starter_widgets_init() {
 			"after_title"	=>"</h4>"
 			),
 		array(
+			"id"			=>"footer-logo-sidebar",
+			"name"			=>"Footer Logo Sidebar",
+			"description"	=>"adds logo to the footer",
+			"before_title"	=>"",
+			"after_title"	=>""
+			),
+		array(
 			"id"			=>"banner-image-sidebar",
 			"name"			=>"Banner Image",
 			"description"	=>"displays a full-width image",
-			"before_title"	=>"",
-			"after_title"	=>"",
+			"before_title"	=>"<div id='background-img'>",
+			"after_title"	=>"</div>",
 			)
 		);
 	
@@ -141,4 +148,13 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+* Function to allow svg files to be uploaded to media library
+*/
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 ?>

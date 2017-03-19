@@ -10,15 +10,17 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-                <?php dynamic_sidebar('footer-sidebar') ?>
+			<div id="footer-content-wrapper">
+                <div class="site-info">
+                    <?php dynamic_sidebar('footer-sidebar') ?>
                 </div>
                 <div id="footer-logo">
-    				<img src="../../../logos/inhabitent-logo-tent.svg">
-				</div>
-				<div id="copyright">
-        			<h5>copyright <span>&copy; 2016</span> inhabitent</h5>
-    			</div>
+                    <?php dynamic_sidebar('footer-logo-sidebar') ?>
+                </div>	
+            </div>
+            <div id="copyright">
+                <h5>copyright <span>&copy; 2016</span> inhabitent</h5>
+            </div>
 				<!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

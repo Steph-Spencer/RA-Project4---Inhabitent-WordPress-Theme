@@ -22,7 +22,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div id="background-img">	
+				<div>	
 					<div id="navbar">
 						<a href="http://localhost:8888/whizkitty"><img id="header-tent" src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
 
