@@ -13,3 +13,6 @@ The styling of the footer needs debugging
 The overall structure of the site is incomplete and I need to refactor the routing of the templates according to the revised assignment.
 The styling of areas beyond the home page is incomplete
 The products need their relevant meta field information added to the posts.
+
+_______________________________
+Update: 19/03/2017 -- Footer has now been debugged and further widgetized so that all content is editable within the WP Dashboard.

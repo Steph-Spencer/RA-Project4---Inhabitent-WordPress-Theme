@@ -637,7 +637,8 @@ a {
   margin: 0.75em 0 0 3em; }
 
 .navi {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-left: auto; }
 
 #navbar {
   display: -ms-flexbox;
@@ -647,7 +648,9 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between;
   font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
-  color: #fff; }
+  color: #fff;
+  position: fixed;
+  z-index: 1; }
 
 h2 .home {
   font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
@@ -799,7 +802,11 @@ h2 .home {
   color: #fff;
   border: 1px solid #fff;
   box-shadow: none;
-  border-radius: none; }
+  border-radius: none;
+  margin-top: auto; }
+
+#more-adventures {
+  margin-left: 7em; }
 
 .hero-image {
   display: -ms-flexbox;
@@ -876,26 +883,28 @@ object {
 .right-sidebar {
   width: 30%; }
 
-footer {
+footer p {
+  color: #fff;
+  font-family: "Merriweather-Light", serif;
+  font-size: 0.8rem; }
+
+footer h4 {
+  font-size: 16px;
+  font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #d99054; }
+
+footer h5 {
+  font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+#colophon {
   margin-top: 7vh;
-  background: url("../../images/dark-wood.png") repeat-x;
-  min-height: 55vh; }
-  footer p {
-    color: #fff;
-    font-family: "Merriweather-Light", serif;
-    font-size: 0.8rem; }
-  footer h4 {
-    font-size: 16px;
-    font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
-    text-transform: uppercase;
-    color: #d99054; }
-  footer h5 {
-    font-family: "Novecentosanswide-Normal", Helvetica, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500; }
+  background: url("../../images/dark-wood.png") repeat-x; }
 
 .site-info {
   display: -ms-flexbox;

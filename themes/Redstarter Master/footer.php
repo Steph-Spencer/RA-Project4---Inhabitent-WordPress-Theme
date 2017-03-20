@@ -19,7 +19,7 @@
                 </div>	
             </div>
             <div id="copyright">
-                <h5>copyright <span>&copy; 2016</span> inhabitent</h5>
+                <h5><?php dynamic_sidebar('copyright-sidebar')?></h5>
             </div>
 				<!-- .site-info -->
 			</footer><!-- #colophon -->

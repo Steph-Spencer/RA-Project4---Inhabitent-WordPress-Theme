@@ -87,6 +87,13 @@ function red_starter_widgets_init() {
 			"after_title"	=>""
 			),
 		array(
+			"id"			=>"copyright-sidebar",
+			"name"			=>"Copyright Sidebar",
+			"description"	=>"adds a copyright notice",
+			"before_title"	=>"<h5>",
+			"after_title"	=>"</h5>"
+			),
+		array(
 			"id"			=>"banner-image-sidebar",
 			"name"			=>"Banner Image",
 			"description"	=>"displays a full-width image",

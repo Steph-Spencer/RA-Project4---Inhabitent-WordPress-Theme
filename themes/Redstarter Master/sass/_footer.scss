@@ -1,7 +1,4 @@
 footer{
-    margin-top: 7vh;
-    background: url("../../images/dark-wood.png") repeat-x;
-    min-height: 55vh;
     p{
         color: #fff;
         font-family: $serif;
@@ -22,6 +19,11 @@ footer{
         font-weight: 500;
     }
 }
+
+#colophon{
+        margin-top: 7vh;
+        background: url("../../images/dark-wood.png") repeat-x;
+    }
 
 .site-info{
     display: flex;

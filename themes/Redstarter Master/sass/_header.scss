@@ -11,6 +11,7 @@
 }
 .navi{
 	text-transform: uppercase;
+	margin-left: auto;
 
 }
 
@@ -20,5 +21,7 @@
 	justify-content: space-between;
 	font-family: $sans-serif;
 	color: #fff;
+	position: fixed;
+	z-index: 1;
 	;
 }
