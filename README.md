@@ -7,11 +7,11 @@ The theme incorporates custom post types, taxonomies, custom meta fields, and us
 
 
 
-This project is incomplete.
+This project is a work in progress.
 The Adventures section on the home page has not been laid out.
-The styling of the footer needs debugging
+The styling of the footer needs debugging.
 The overall structure of the site is incomplete and I need to refactor the routing of the templates according to the revised assignment.
-The styling of areas beyond the home page is incomplete
+The styling of areas beyond the home page is 
 The products need their relevant meta field information added to the posts.
 
 _______________________________
